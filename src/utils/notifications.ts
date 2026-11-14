@@ -3,7 +3,7 @@ import { LocalNotifications } from '@capacitor/local-notifications';
 
 const DAILY_REMINDER_ID = 1001;
 const TEST_REMINDER_ID = 1002;
-const NOTIFICATION_TITLE = '온기 · 감사 가계부';
+const NOTIFICATION_TITLE = '차곡 · 감사 가계부';
 const NOTIFICATION_BODY =
   '오늘의 감사함을 돌아볼까요? 오늘 누린 작은 풍요를 다정하게 적어보아요.';
 
@@ -121,7 +121,7 @@ export async function triggerImmediateGratitudeNotification(
     try {
       const notification = new Notification(NOTIFICATION_TITLE, {
         body: NOTIFICATION_BODY,
-        tag: 'ongi-daily-gratitude-reminder',
+        tag: 'chagok-daily-gratitude-reminder',
       });
       notification.onclick = () => {
         window.focus();

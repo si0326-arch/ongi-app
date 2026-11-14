@@ -1,4 +1,4 @@
-package com.ongi.gratitudeledger;
+package com.chagok.gratitudeledger;
 
 import com.getcapacitor.BridgeActivity;
 

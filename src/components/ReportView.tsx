@@ -120,7 +120,7 @@ export function ReportView({
 
   const handleDownloadReceiptText = () => {
     const lines = [
-      `온기 — ${yearStr}년 ${Number(monthStr)}월 감사 영수증`,
+      `차곡 — ${yearStr}년 ${Number(monthStr)}월 감사 영수증`,
       '========================================',
       `이번 달 누린 풍요: ${formatAbundanceKRW(monthTotal, isSafeMode)}`,
       `가장 많이 누린 가치: ${mostFrequentTag ? mostFrequentTag.tag : '기록 대기 중'}`,
@@ -136,7 +136,7 @@ export function ReportView({
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
     link.href = url;
-    link.download = `ongi-receipt-${currentMonthKey}.txt`;
+    link.download = `chagok-receipt-${currentMonthKey}.txt`;
     link.click();
     URL.revokeObjectURL(url);
     onNotify?.('감사 영수증 텍스트 파일이 저장되었어요.');
@@ -163,7 +163,7 @@ export function ReportView({
       }
 
       const link = document.createElement('a');
-      link.download = `ongi-gratitude-receipt-${currentMonthKey}.png`;
+      link.download = `chagok-gratitude-receipt-${currentMonthKey}.png`;
       link.href = dataUrl;
       link.click();
       onNotify?.('감사 영수증이 이미지로 저장되었어요 🌱');
@@ -340,7 +340,7 @@ export function ReportView({
             {/* Receipt Header */}
             <div className="text-center space-y-1">
               <p className="text-[11px] font-semibold tracking-widest text-[#8C8478]">
-                ONGI GRATITUDE RECEIPT
+                CHAGOK GRATITUDE RECEIPT
               </p>
               <h3 className="font-diary text-lg font-bold text-[#3D3A35]">
                 {yearStr}년 {Number(monthStr)}월 감사의 영수증
@@ -414,7 +414,7 @@ export function ReportView({
             {/* Receipt Footer */}
             <div className="text-center pt-1">
               <span className="font-diary text-xs text-[#787166]">
-                오늘도 충분히 잘 살아내었어요 · 온기 감사 가계부
+                오늘도 충분히 잘 살아내었어요 · 차곡 감사 가계부
               </span>
             </div>
           </div>

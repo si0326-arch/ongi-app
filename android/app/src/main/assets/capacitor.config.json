@@ -1,6 +1,6 @@
 {
-	"appId": "com.ongi.gratitudeledger",
-	"appName": "온기",
+	"appId": "com.chagok.gratitudeledger",
+	"appName": "차곡",
 	"webDir": "dist",
 	"android": {
 		"backgroundColor": "#FDFBF7"

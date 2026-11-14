@@ -27,6 +27,7 @@ import {
   getMonthKeyFromISO,
 } from '../utils/format';
 import { CategoryIcon } from './CategoryIcon';
+import chagokLogo from '../assets/images/chagok_app_logo_1794632176199.jpg';
 
 interface HomeFeedViewProps {
   items: ExpenseItem[];
@@ -98,11 +99,18 @@ export function HomeFeedView({
     <div className="space-y-5 pb-28">
       {/* Top Greeting & Guide Button */}
       <header className="flex items-start justify-between gap-3 pt-2">
-        <div>
-          <h1 className="font-diary text-2xl font-bold text-[#3D3A35] tracking-tight">
-            온기
-          </h1>
-          <p className="text-xs text-[#787166] mt-0.5">{greeting}</p>
+        <div className="flex items-center gap-3">
+          <img
+            src={chagokLogo}
+            alt="차곡 로고"
+            className="w-11 h-11 rounded-2xl object-cover shadow-[0_2px_8px_rgba(61,58,53,0.08)] shrink-0"
+          />
+          <div>
+            <h1 className="font-diary text-2xl font-bold text-[#3D3A35] tracking-tight leading-none">
+              차곡
+            </h1>
+            <p className="text-xs text-[#787166] mt-1">{greeting}</p>
+          </div>
         </div>
 
         <div className="flex items-center gap-1.5 shrink-0">
