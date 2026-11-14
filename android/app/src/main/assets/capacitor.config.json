@@ -1,0 +1,8 @@
+{
+	"appId": "com.ongi.gratitudeledger",
+	"appName": "온기",
+	"webDir": "dist",
+	"android": {
+		"backgroundColor": "#FDFBF7"
+	}
+}

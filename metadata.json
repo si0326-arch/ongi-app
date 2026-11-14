@@ -1,0 +1,8 @@
+{
+  "name": "온기 — 마음을 돌보는 감사 가계부",
+  "description": "지출을 손실이 아닌 내가 누린 가치와 풍요로 바라보며 돈에 대한 불안을 치유하는 감사 가계부 앱",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
